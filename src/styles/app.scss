@@ -18,8 +18,8 @@
 }
 
 .WeaponForm,
-.TargetUnitForm {
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
+.TargetUnitForm,
+.attackingUnit_side,
+.defendingUnit_side {
+  margin: 10px 0px;
 }

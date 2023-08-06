@@ -1,0 +1,26 @@
+{
+  "spaceMarine": {
+    "targetToughness": 4,
+    "targetSave": 3,
+    "targetWounds": 2,
+    "targetInvulnerableSave": 5,
+    "stealth": false,
+    "benefitOfCover": true
+  },
+  "ork": {
+    "targetToughness": 5,
+    "targetSave": 4,
+    "targetWounds": 3,
+    "targetInvulnerableSave": 0,
+    "stealth": false,
+    "benefitOfCover": false
+  },
+  "eldar": {
+    "targetToughness": 3,
+    "targetSave": 4,
+    "targetWounds": 1,
+    "targetInvulnerableSave": 4,
+    "stealth": true,
+    "benefitOfCover": true
+  }
+}

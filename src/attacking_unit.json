@@ -1,0 +1,26 @@
+{
+  "tyrant": {
+    "unitCount": 10,
+    "attacks": 4,
+    "ballisticSkill": 3,
+    "strength": 5,
+    "armorPiercing": -1,
+    "damage": 1
+  },
+  "terminator": {
+    "unitCount": 5,
+    "attacks": 3,
+    "ballisticSkill": 4,
+    "strength": 4,
+    "armorPiercing": -2,
+    "damage": 2
+  },
+  "raptor": {
+    "unitCount": 15,
+    "attacks": 2,
+    "ballisticSkill": 3,
+    "strength": 4,
+    "armorPiercing": 0,
+    "damage": 1
+  }
+}
