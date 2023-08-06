@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin-top: 5vh;
+  h1 {
+    text-align: center;
+  }
+}
+.FormsWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.WeaponForm,
+.TargetUnitForm {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
