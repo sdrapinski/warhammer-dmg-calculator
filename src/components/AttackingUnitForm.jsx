@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import WeaponSelect from "./selects/WeaponSelect";
 
-const AttackingUnitForm = ({ weaponData }) => {
+const AttackingUnitForm = ({ unitData }) => {
+  const [selectedWeaponObject, setSelectedWeaponObject] = useState({});
   const [unitCount, setUnitCount] = useState(1);
   const [attacks, setAttacks] = useState(4);
   const [ballisticSkill, setBallisticSkill] = useState(3);
@@ -23,6 +25,24 @@ const AttackingUnitForm = ({ weaponData }) => {
       // Jeśli inny input, wywołaj funkcję do obsługi zmiany dla pól typu input
       handleInputChangeForInput(name, value);
     }
+  };
+
+  const handleWeaponChange = (weaponObject) => {
+    setSelectedWeaponObject(weaponObject);
+    setAttacks(weaponObject.A || 4);
+    setBallisticSkill(weaponObject.BS || 3);
+    setStrength(weaponObject.S || 5);
+    setArmorPiercing(weaponObject.AP || -1);
+    setDamage(weaponObject.D || 1);
+    setLethalHits(weaponObject.keywords.includes("LETHAL HITS") || false);
+    setIgnoresCover(weaponObject.keywords.includes("IGNORES COVER") || false);
+    setSustainedHits(weaponObject.keywords.includes("SUSTAINED HITS") || false);
+    setExtraAttacks(weaponObject.keywords.includes("EXTRA ATTACKS") || false);
+    setDevastatingWounds(
+      weaponObject.keywords.includes("DEVASTATING WOUNDS") || false
+    );
+
+    setSustainedHitsCount(1);
   };
 
   const handleCheckboxChange = (name, checked) => {
@@ -78,7 +98,12 @@ const AttackingUnitForm = ({ weaponData }) => {
 
   return (
     <div>
+      {unitData && (
+        <WeaponSelect unitData={unitData} onChange={handleWeaponChange} />
+      )}
+
       <h2>Parametry Jednostki atakującej</h2>
+
       <div>
         <label htmlFor="unitCount">Ilość jednostek w oddziale:</label>
         <input
@@ -91,7 +116,7 @@ const AttackingUnitForm = ({ weaponData }) => {
       <div>
         <label htmlFor="attacks">Ataki (A):</label>
         <input
-          type="number"
+          type="text"
           name="attacks"
           value={attacks}
           onChange={handleInputChange}
@@ -100,7 +125,7 @@ const AttackingUnitForm = ({ weaponData }) => {
       <div>
         <label htmlFor="ballisticSkill">Balistick Skill (BS):</label>
         <input
-          type="number"
+          type="text"
           name="ballisticSkill"
           value={ballisticSkill}
           onChange={handleInputChange}
@@ -118,7 +143,7 @@ const AttackingUnitForm = ({ weaponData }) => {
       <div>
         <label htmlFor="armorPiercing">Armor Piercing (AP):</label>
         <input
-          type="number"
+          type="text"
           name="armorPiercing"
           value={armorPiercing}
           onChange={handleInputChange}
@@ -127,7 +152,7 @@ const AttackingUnitForm = ({ weaponData }) => {
       <div>
         <label htmlFor="damage">Damage (D):</label>
         <input
-          type="number"
+          type="text"
           name="damage"
           value={damage}
           onChange={handleInputChange}

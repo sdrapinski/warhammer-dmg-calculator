@@ -42,7 +42,11 @@ function App() {
             selectedAttackingUnit={selectedAttackingUnit}
             onChange={handleAttackingUnitChange}
           />
-          <AttackingUnitForm weaponData={weapon} />
+
+          <AttackingUnitForm
+            unitData={attackingUnitData[selectedAttackingUnit]}
+            selectedWeaponIndex={weapon}
+          />
         </div>
         <div className="TargetUnitForm">
           <DefendingUnitSelect
