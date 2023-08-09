@@ -1,26 +1,132 @@
 {
-  "tyrant": {
-    "unitCount": 10,
-    "attacks": 4,
-    "ballisticSkill": 3,
-    "strength": 5,
-    "armorPiercing": -1,
-    "damage": 1
+  "WINGED HIVE TYRANT": {
+    "RANGED WEAPONS": {
+      "Heavy venom cannon": {
+        "keywords": ["BLAST"],
+        "Range": "36\"",
+        "A": "D3",
+        "BS": "2+",
+        "S": "9",
+        "AP": "-2",
+        "D": "3"
+      },
+      "Stranglethorn cannon": {
+        "keywords": ["BLAST"],
+        "Range": "36\"",
+        "A": "D6+1",
+        "BS": "2+",
+        "S": "7",
+        "AP": "-1",
+        "D": "2"
+      }
+    },
+    "MELEE WEAPONS": {
+      "Monstrous bonesword and lash whip": {
+        "keywords": ["TWIN-LINKED"],
+        "Range": "Melee",
+        "A": "6",
+        "WS": "2+",
+        "S": "9",
+        "AP": "-2",
+        "D": "3"
+      },
+      "Monstrous scything talons": {
+        "keywords": ["EXTRA ATTACKS"],
+        "Range": "Melee",
+        "A": "4",
+        "WS": "2+",
+        "S": "7",
+        "AP": "-2",
+        "D": "2"
+      },
+      "Tyrant talons": {
+        "keywords": [],
+        "Range": "Melee",
+        "A": "5",
+        "WS": "2+",
+        "S": "7",
+        "AP": "-2",
+        "D": "2"
+      }
+    }
   },
-  "terminator": {
-    "unitCount": 5,
-    "attacks": 3,
-    "ballisticSkill": 4,
-    "strength": 4,
-    "armorPiercing": -2,
-    "damage": 2
+  "HIVE TYRANT": {
+    "RANGED WEAPONS": {
+      "Heavy venom cannon": {
+        "keywords": ["BLAST"],
+        "Range": "36\"",
+        "A": "D3",
+        "BS": "2+",
+        "S": "9",
+        "AP": "-2",
+        "D": "3"
+      },
+      "Stranglethorn cannon": {
+        "keywords": ["BLAST"],
+        "Range": "36\"",
+        "A": "D6+1",
+        "BS": "2+",
+        "S": "7",
+        "AP": "-1",
+        "D": "2"
+      }
+    },
+    "MELEE WEAPONS": {
+      "Monstrous bonesword and lash whip": {
+        "keywords": ["TWIN-LINKED"],
+        "Range": "Melee",
+        "A": "6",
+        "WS": "2+",
+        "S": "9",
+        "AP": "-2",
+        "D": "3"
+      },
+      "Monstrous scything talons": {
+        "keywords": ["EXTRA ATTACKS"],
+        "Range": "Melee",
+        "A": "4",
+        "WS": "2+",
+        "S": "7",
+        "AP": "-2",
+        "D": "2"
+      }
+    }
   },
-  "raptor": {
-    "unitCount": 15,
-    "attacks": 2,
-    "ballisticSkill": 3,
-    "strength": 4,
-    "armorPiercing": 0,
-    "damage": 1
+  "THE SWARMLORD": {
+    "RANGED WEAPONS": {
+      "Synaptic pulse": {
+        "keywords": ["PSYCHIC", "TORRENT"],
+        "Range": "18\"",
+        "A": "D6+3",
+        "BS": "N/A",
+        "S": "5",
+        "AP": "-1",
+        "D": "2"
+      }
+    },
+    "MELEE WEAPONS": {
+      "Bone sabres": {
+        "keywords": ["TWIN-LINKED"],
+        "Range": "Melee",
+        "A": "8",
+        "WS": "2+",
+        "S": "9",
+        "AP": "-2",
+        "D": "3"
+      }
+    }
+  },
+  "BROODLORD": {
+    "MELEE WEAPONS": {
+      "Broodlord claws and talons": {
+        "keywords": ["DEVASTATING WOUNDS", "TWIN-LINKED"],
+        "Range": "Melee",
+        "A": "5",
+        "WS": "2+",
+        "S": "6",
+        "AP": "-2",
+        "D": "2"
+      }
+    }
   }
 }
