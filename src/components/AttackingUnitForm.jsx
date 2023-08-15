@@ -102,10 +102,10 @@ const AttackingUnitForm = ({ unitData }) => {
         <WeaponSelect unitData={unitData} onChange={handleWeaponChange} />
       )}
 
-      <h2>Parametry Jednostki atakującej</h2>
+      <h2>Attacking Unit</h2>
 
       <div>
-        <label htmlFor="unitCount">Ilość jednostek w oddziale:</label>
+        <label htmlFor="unitCount">Unit quantity:</label>
         <input
           type="number"
           name="unitCount"
@@ -114,7 +114,7 @@ const AttackingUnitForm = ({ unitData }) => {
         />
       </div>
       <div>
-        <label htmlFor="attacks">Ataki (A):</label>
+        <label htmlFor="attacks">Attacks (A):</label>
         <input
           type="text"
           name="attacks"
@@ -132,7 +132,7 @@ const AttackingUnitForm = ({ unitData }) => {
         />
       </div>
       <div>
-        <label htmlFor="strength">Siła (S):</label>
+        <label htmlFor="strength">Strength (S):</label>
         <input
           type="number"
           name="strength"

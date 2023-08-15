@@ -7,14 +7,14 @@ const DefendingUnitSelect = ({
 }) => {
   return (
     <div className="defendingUnit_side">
-      <h2>Parametry Jednostki broniącej</h2>
+      <h2>Defending unit </h2>
       <select
         value={selectedDefendingUnit}
         onChange={onChange}
         name="defendingUnit"
       >
         <option value="" disabled>
-          Wybierz jednostkę broniącą
+          Choose a unit
         </option>
         {Object.keys(defendingUnits).map((unitName) => (
           <option key={unitName} value={unitName}>

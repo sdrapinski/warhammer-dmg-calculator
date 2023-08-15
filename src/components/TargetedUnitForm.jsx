@@ -51,7 +51,7 @@ const TargetUnitForm = ({ defendingUnit }) => {
 
   return (
     <div>
-      <h2>Parametry Jednostki broniącej</h2>
+      <h2>Defending unit parameters</h2>
       <div>
         <label htmlFor="targetToughness">Toughness (T) celu:</label>
         <input
@@ -81,7 +81,7 @@ const TargetUnitForm = ({ defendingUnit }) => {
       </div>
       <div>
         <label htmlFor="targetInvulnerableSave">
-          Invulnerable Save (Inv) celu:
+          Invulnerable Save (Inv) :
         </label>
         <input
           type="number"
